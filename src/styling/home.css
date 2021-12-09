@@ -1,0 +1,219 @@
+ul {
+    list-style-type: none;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 65px;
+    font-Size: 22px;
+    color: white;
+}
+
+li {}
+
+body {
+    display: block;
+    background-color: #ededed !important;
+}
+
+.child {
+    position: relative;
+    top: 40px;
+    left: 5%;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.4em;
+}
+
+.resp2 {
+    display: none;
+}
+
+.date {
+    display: inline;
+    margin-left: 20px
+}
+
+.add {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+.react-confirm-alert-body-element{
+    z-index: 5000;
+}
+.react-datepicker__time-list-item{
+    font-size: 15px !important;
+}
+.adddm{
+    display: none;
+}
+.react-phone-number-input__icon-image{
+    position:relative;
+    margin-top:-8px;
+}
+@media only screen and (max-width :600px) {
+    .child {
+        top: 80px;
+        width: 99%;
+        left: 1%;
+    }
+    .resp {
+        display: none;
+    }
+    .resp2 {
+        display: block;
+    }
+    .date {
+        display: inline;
+        margin-left: 2px;
+    }
+    .add {
+        display: block;
+        margin: auto;
+        width: 96%;
+        margin-left: 0;
+    }
+    .dataTables_info {
+        margin: auto;
+        text-align: center;
+    }
+    .dataTables_paginate {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .afterdate {
+        margin-top: 2vw !important;
+    }
+    .react-datepicker{
+        margin-left: -75px !important;
+    }
+  .addd{
+    display: none;
+}
+.adddm{
+    display: block;
+}
+ 
+}
+.sidenav---sidenav---_2tBP {
+    background: #9053c7 !important;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0) !important;
+    background: -o-linear-gradient(-135deg, #c850c0, #4158d0) !important;
+    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0) !important;
+    background: linear-gradient(-135deg, #c850c0, #4158d0) !important;
+}
+.backgroundColorfull{
+    background: #9053c7 !important;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0) !important;
+    background: -o-linear-gradient(-135deg, #c850c0, #4158d0) !important;
+    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0) !important;
+    background: linear-gradient(-135deg, #c850c0, #4158d0) !important;   
+}
+.companylogo{
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+
+}
+.sidenav---sidenav-toggle---1KRjR{
+    display: none;
+}
+.navList{
+    margin-top:65% ;
+}
+.logoutNav{
+    position: fixed !important;
+    bottom: 0;
+
+}
+
+.Title{
+    font-size: 40px;
+}
+.sidenav---sidenav---_2tBP.sidenav---expanded---1KdUL{
+    position: fixed;
+}
+.addNew{
+    color: green;
+    margin-left:15px ;
+    cursor: pointer;
+}
+.tableGrid{
+    margin-top: 5%;
+}
+.modalStyle{
+    width: 100%;
+}
+/* .modal-dialog{
+    max-width: 90% !important;
+} */
+.submitButn{
+    border-radius: 0% !important;
+}
+.Title_center{
+    font-size: 40px;
+    text-align: center;
+}
+.accordion-input{
+    width: 100%;
+}
+.accordion-header{
+    font-size: 25px;
+}
+.react-datetime-picker{
+    width: 100%;
+}
+.tbl-title{
+    font-size: 20px;
+    text-align: center;
+}
+.tbl-subtitle{
+    text-align: left;
+    font-size: 15px;
+}
+.action-bar-items{
+    font-size: 40px;
+    border-bottom: 1px solid  #ededed !important;
+    ;
+}
+.action-bar{
+    background: #FFFF;
+    width: 60px;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top:40%;
+    line-height: 1.8;
+}
+.required:after {
+    content:" *";
+    color: red;
+  }
+.mandatory{
+    border: 1px solid red !important;
+}
+.filter-button{
+    font-size: 30px;
+    width: 100%;
+    float: right;
+    text-align: right;
+    cursor: pointer;
+}
+.download-button{
+    font-size: 30px;
+    color: rgb(62, 62, 248);
+}
+.page-link{
+    color:silver;
+}
+.toggleText{
+    font-size: 20px;
+    ;
+}
