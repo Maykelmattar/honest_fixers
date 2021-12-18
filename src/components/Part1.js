@@ -81,6 +81,7 @@ componentDidUpdate(prevProps){
     });
     }
     checkAvailability =()=>{
+      if(!(this.props.viewMode || this.props.item.number == this.state.number)){
       if(this.state.number!==""){
       let _data = {
         number: this.state.number,
@@ -114,6 +115,7 @@ componentDidUpdate(prevProps){
   
         });
       }
+    }
     }
   render() {
     return (

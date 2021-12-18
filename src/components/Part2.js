@@ -384,7 +384,7 @@ constructor(props){
        </div>
 
        <div className="row">
-       <div className="col-md-3 col-12">
+       <div className="col-md-4 col-12">
               <label htmlFor="receivedIn">Received In</label>
               <div>
               <DateTimePicker
@@ -395,7 +395,7 @@ constructor(props){
       />
       </div>
        </div>
-              <div className="col-md-3 col-12">
+              <div className="col-md-4 col-12">
               <label htmlFor="ETA">ETA</label>
               <div>
               <DateTimePicker
@@ -407,17 +407,22 @@ constructor(props){
       </div>
        </div>
 
-       <div className="col-md-3 col-12">
-              <label className="required" htmlFor="description">Description</label>
-              <input type="text" disabled={this.props.item.viewMode} id="description" value={this.state.description} onChange={this.handleText} className={this.props.mandatoryCheck&&!this.state.description?"mandatory form-control form-control-lg" : "form-control form-control-lg"} />
-
-       </div>
-              <div className="col-md-3 col-12">
+              <div className="col-md-4 col-12">
               <label htmlFor="clientNTE">Client NTE</label>
               <input type="number" disabled={this.props.item.viewMode} id="clientNTE" value={this.state.clientNTE} onChange={this.handleText} className={ "form-control form-control-lg"} />
 
        </div>
   
+       </div>
+       <div className="row">
+           <div className="col-12">
+           <label className="required"htmlFor="description">Description 
+                                     
+                                     </label>
+                               
+                                        <textarea type="textarea" disabled={this.props.item.viewMode} id="description" value={this.state.description} onChange={this.handleText} className={this.props.mandatoryCheck&&!this.state.description?"mandatory form-control form-control-lg" : "form-control form-control-lg"}  />
+                                        
+           </div>
        </div>
      
 

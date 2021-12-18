@@ -254,7 +254,7 @@ const options = [
 class Wo extends React.Component {
   state = {
     data: {}, updatesdata: {},originaldata:{},
-    modal: false, id: '', updatesDescription: "", updatesDispatcher: "", editing: 0,
+    modal: false, id: '', updatesDescription: "", updatesDispatcher: "",woNumber:"", editing: 0,
     showFilter:false,
     fromDate:"",
     toDate:"",
@@ -370,7 +370,7 @@ class Wo extends React.Component {
     let columns = [
       {
         label: 'Wo #',
-        field: 'Id',
+        field: 'number',
         sort: 'asc',
         width: 50
       },
@@ -546,7 +546,7 @@ class Wo extends React.Component {
       },
       {
         label: 'Workorder',
-        field: 'wo',
+        field: 'woNumber',
         sort: 'asc',
         width: 800
       },
@@ -588,6 +588,9 @@ class Wo extends React.Component {
             },
           });
         } else {
+          for (let item of res) {
+          item.woNumber=this.state.woNumber
+          }
           this.setState({
             updatesdata: {
               columns: columns,
@@ -636,6 +639,9 @@ class Wo extends React.Component {
           statusList: res.statusList,
           priorityList: res.priorityList,
           clientsList: res.clientsList
+        },()=>{
+          this.loadWo()
+
         })
 
       }).catch((error) => {
@@ -722,14 +728,14 @@ class Wo extends React.Component {
 });;
   }
   componentDidMount() {
-    this.loadWo()
     this.loadDropdown()
 
   }
   show_update(item) {
     this.setState({
       id: item.Id,
-      updatesDispatcher: item.dispatcher
+      updatesDispatcher: item.dispatcher,
+      woNumber:item.number
     }, () => {
       this.loadUpdates()
       this.toggle()
@@ -1181,6 +1187,7 @@ value={this.state.toDate}
             bordered
             responsive={true}
             hover
+            paging={false}
             data={this.state.data}
           />
         </div>
