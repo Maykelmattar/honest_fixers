@@ -130,7 +130,8 @@ DoneStmp:pt1.status?(pt1.status.label==="Job Done" && this.state.item.status.lab
 id: this.state.item.Id?this.state.item.Id:"",
 Cstmp:localStorage.getItem('username'),
     };
-//console.log(_data)
+console.log(_data)
+console.log(this.state.numberAvailability)
 if(_data.dispatcher && _data.client && _data.type && _data.status && _data.priority && _data.store && _data.facility && _data.state && _data.city && _data.zip && _data.location && _data.description &&(!_data.number || this.state.numberAvailability)){
     axios({
       method: "post",
@@ -171,7 +172,7 @@ if(_data.dispatcher && _data.client && _data.type && _data.status && _data.prior
                         this.setState({ errormsg: res.message });
       
             }else{
-              let msg = this.state.editing===0?"Priority Added":"Priority Updated";
+              let msg = this.state.editing===0?"Wo Added":"Wo Updated";
               toast.success(msg, {
                 position: "top-right",
                 autoClose: 2000,

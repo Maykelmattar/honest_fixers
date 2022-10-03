@@ -1,7 +1,7 @@
 import React from 'react';
 import { confirmAlert } from 'react-confirm-alert'; // Import
 import 'react-confirm-alert/src/react-confirm-alert.css';
-import Companylogo from "../images/honestfixer_logo-02.png"
+import Companylogo from "../images/org.png"
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -246,7 +246,7 @@ closeForm = (e) =>{
                         <SideNav.Nav selected={this.state.selectedpage}>
                           <div>
 
-                        <img  src={Companylogo} className="companylogo" alt="IMG"></img>
+                        <img  src={Companylogo} className="companylogo" style={{ width: '120px'}} alt="IMG"></img>
 </div>
 
                             <NavItem eventKey="users" className="navList" >
@@ -348,7 +348,7 @@ closeForm = (e) =>{
                         <SideNav.Nav selected={this.state.selectedpage}>
                           <div>
 
-                        <img  src={Companylogo} className="companylogo" alt="IMG"></img>
+                        <img  src={Companylogo} className="companylogo" style={{ width: '120px'}} alt="IMG"></img>
 </div>
 <NavItem eventKey="workorders" className="navList"  >
                                 <NavIcon>
